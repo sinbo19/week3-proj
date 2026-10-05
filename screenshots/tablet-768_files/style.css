@@ -1,0 +1,166 @@
+/* =========================
+   Mobile First
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #f7f3ff;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 5%;
+    background-color: #e8dcff;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 5%;
+    background-color: #ffffff;
+}
+
+nav a {
+    display: block;
+    padding: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6c4ab6;
+    color: white;
+    border-radius: 0.4rem;
+}
+
+nav a:hover {
+    background-color: #4f3489;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Sections */
+section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Image */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+/* Article */
+article {
+    padding: 1rem;
+    background-color: #f1eaff;
+    border-radius: 0.5rem;
+}
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 5%;
+    text-align: center;
+    background-color: #e8dcff;
+}
+
+
+/* =========================
+   Tablet - 768px and above
+   ========================= */
+
+@media (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        flex: 1;
+        max-width: 180px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    section {
+        margin-bottom: 0;
+    }
+}
+
+
+/* =========================
+   Desktop - 1024px and above
+   ========================= */
+
+@media (min-width: 1024px) {
+
+    header {
+        padding: 3rem 5%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    nav {
+        padding: 1.2rem 5%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    footer {
+        padding: 2rem 5%;
+    }
+}
