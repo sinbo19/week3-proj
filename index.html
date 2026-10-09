@@ -8,6 +8,9 @@
   </head>
   <body>
     <header>
+      <button id="theme-toggle" type="button">
+  Switch to Dark Mode
+</button>
       <h1>Meseret Wolela - Personal Profile</h1>
       <p>Software Engineering Student and Aspiring Web Developer</p>
     </header>
@@ -76,6 +79,7 @@
 
           <li>
             <a
+
               href="https://linkedin.com/in/meseret-wolela-0628b3388"
               target="_blank"
             >
@@ -84,9 +88,37 @@
           </li>
         </ul>
       </section>
+
+  
+       <section id="github-profile">
+
+          <h2>GitHub Profile</h2>
+
+    <!-- Loading message -->
+          <p id="github-status" role="status" aria-live="polite">
+               Loading GitHub profile...
+         </p>
+
+    <!-- Error message -->
+    <p id="github-error" role="alert" hidden></p>
+
+    <!-- GitHub information will appear here -->
+    <div id="github-data"></div>
+
+    <!-- Retry button -->
+    <button id="github-retry" type="button" hidden>
+        Try Again
+    </button>
+
+       </section>
+
+      
+
     </main>
     <footer>
       <p>&copy; 2026 Meseret Wolela. All rights reserved.</p>
     </footer>
+    <script src="main.js" defer></script>
+
   </body>
 </html>
